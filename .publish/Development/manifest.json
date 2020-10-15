@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.0",
+    "id": "2dbace6f-3f3b-4779-9e3f-bb4d27c403fe",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Developer Name",
+        "websiteUrl": "https://sparxtechnologies.ngrok.io",
+        "privacyUrl": "https://sparxtechnologies.ngrok.io/privacy",
+        "termsOfUseUrl": "https://sparxtechnologies.ngrok.io/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "OneProductivityHub",
+        "full": "OneProductivityHub"
+    },
+    "description": {
+        "short": "Short description for OneProductivityHub.",
+        "full": "Full description of OneProductivityHub for Microsoft Teams."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "Personal Tab",
+            "contentUrl": "https://sparxtechnologies.ngrok.io/tab",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "sparxtechnologies.ngrok.io"
+    ]
+}
