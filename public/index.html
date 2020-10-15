@@ -10,11 +10,13 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Presence.Read.All should not be required, but is because of a reported bug -->
+    <!-- https://github.com/microsoftgraph/microsoft-graph-toolkit/issues/695 -->
     <mgt-teams-provider
       client-id="%REACT_APP_CLIENT_ID%"
       auth-popup-url="/auth.html"
-      scopes="User.Read, User.Read.All, Calendars.Read, Contacts.Read, People.Read, Group.Read.All, Group.ReadWrite.All, Tasks.Read, Tasks.ReadWrite, Mail.ReadBasic, Mail.Read, Mail.ReadWrite, Presence.Read.All"
-    ></mgt-teams-provider>
+      scopes="User.Read, User.Read.All, Calendars.Read, Contacts.Read, People.Read, Group.Read.All, Group.ReadWrite.All, Tasks.Read, Tasks.ReadWrite, Mail.ReadBasic, Mail.Read, Mail.ReadWrite, Presence.Read, Presence.Read.All">
+    </mgt-teams-provider>
 
     <mgt-login>
       <template data-type="signed-in-button-content">
